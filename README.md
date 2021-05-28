@@ -11,7 +11,7 @@ Using the tokeniser, each name was then converted into a sequence of integers. T
 In order to achieve higher accuracy, the training data set was augmented by up-sapling minority classes (`University` and `Company`) so that the training data set was balanced.
 
 # Summary
-## Exploratiry Data Analysis
+## Exploratory Data Analysis
 This included looking at the given data set and realising it was unbalanced.
 
 For manual feature engineering, I would have looked at whether the names included common words that go with persons (`mr`,`dr`,`ms`), companies (`llc`,`pty`,`cc`), or universities (`college`,`university`,`campus`). Then I would have constructed binary categorical features that indicate whether these were present in the name. However, it is easy to miss some of these common words and this approach is limited to what I consider common. Instead, I opted for an embedding approach that places words in a  𝐷-dimensional abstract space with contextual proximity. This method uses all the words present in the training set and automatically groups similar words together.
