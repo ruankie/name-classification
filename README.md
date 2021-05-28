@@ -21,3 +21,12 @@ As seen in the confusion matrix for the test set, this model was able to classif
 
 ## Deployment
 To deploy this model, a container environment like Docker can be set up with all the necessary libraries installed. The trained model can also be saved in this environment. Whenever someone wants to use the model, they can simply reproduce an instance of the specified container and supply the model with some names and they'll be classified as either `Person`, `Company`, or `University`.
+
+# Labraries Used
+> * Python 							   3.7.6
+> * tensorflow                         2.4.1
+> * numpy                              1.19.5
+> * pandas                             1.0.1
+> * matplotlib                         3.1.3
+> * seaborn                            0.10.0
+> * scikit-learn                       0.22.1
